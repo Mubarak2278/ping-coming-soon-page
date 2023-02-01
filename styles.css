@@ -1,0 +1,127 @@
+@import url(https://fonts.google.com/specimen/Libre+Franklin);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.logo img {
+  height: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.text .text-1 {
+  font-size: 30px;
+  font-family: Libre Franklin;
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+.text .text-1 span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 1000;
+}
+
+.text .text-2 {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  font-family: Libre Franklin;
+}
+
+.notify-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.notify-field input {
+  width: 24em;
+  height: 38px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 0%, 59%);
+  outline: none;
+  text-align: initial;
+  padding: 15px;
+}
+
+.error1,
+.error2 {
+  font-size: 12px;
+  color: hsl(354, 100%, 66%);
+  display: none;
+  text-align: center;
+}
+
+.notify-field button {
+  width: 130px;
+  height: 38px;
+  border-radius: 30px;
+  margin-left: 9px;
+  border: none;
+  background: hsl(223, 87%, 63%);
+  color: white;
+  cursor: pointer;
+}
+
+.notify-field button:hover {
+  background: hsl(223, 100%, 88%);
+  transition: 0.7s;
+}
+
+.fullpage-img {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fullpage-img img {
+  height: 300px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-links i {
+  margin: 20px;
+  color: hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  body {
+    width: 450px;
+  }
+  .notify-field {
+    flex-direction: column;
+  }
+  .notify-field button {
+    margin-top: 20px;
+  }
+  .fullpage-img img {
+    width: 350px;
+  }
+}
